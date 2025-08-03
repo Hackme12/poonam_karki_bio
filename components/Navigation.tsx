@@ -20,7 +20,7 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
 
   const navItems = [
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
+    //{ name: "Skills", href: "#skills" },
     { name: "Research", href: "#research" },
     { name: "Conferences", href: "#conferences" },
     // { name: 'Data', href: '#data-viz' },
