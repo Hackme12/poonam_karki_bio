@@ -131,10 +131,10 @@ export default function Hero() {
                     <div>
                       <h4 className="font-semibold text-gray-800">Mission</h4>
                       <p className="text-sm text-gray-600">
-                        Advancing climate-smart agriculte by helping small and
+                        Advancing climate-smart agriculture by helping small and
                         mid-scale farmers transition to organic production,
                         improve productivity, and build resilience thorough
-                        evidence-based soild health managament
+                        evidence-based soild health management
                       </p>
                     </div>
                   </div>
