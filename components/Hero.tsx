@@ -11,7 +11,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative bg-gradient-to-br from-emerald-50 via-blue-50 to-green-100">
+    <section className="min-h-screen flex items-center relative bg-gradient-to-br from-emerald-50 via-blue-50 to-green-100 pt-32 md:pt-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-green-300 rounded-full blur-3xl"></div>
