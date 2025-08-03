@@ -1,5 +1,5 @@
-'use client'
-import { Mail, Linkedin, Github, Heart } from 'lucide-react'
+"use client";
+import { Mail, Linkedin, Github, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,18 +10,18 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Poonam Karki</h3>
             <p className="text-gray-300 mb-4">
-              Research Specialist bridging finance analytics and soil science research 
-              for sustainable agricultural solutions.
+              Research Specialist bridging finance analytics and soil science
+              research for sustainable agricultural solutions.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.linkedin.com/in/poonam-karki-56585b1b4/" 
+              <a
+                href="https://www.linkedin.com/in/poonam-karki-56585b1b4/"
                 className="text-gray-300 hover:text-blue-400 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
-              <a 
-                href="mailto:poonam.karki@lincolnu.edu" 
+              <a
+                href="mailto:poonam.karki@lincolnu.edu"
                 className="text-gray-300 hover:text-blue-400 transition-colors"
               >
                 <Mail size={20} />
@@ -33,11 +33,36 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#research" className="hover:text-white transition-colors">Research</a></li>
-              <li><a href="#conferences" className="hover:text-white transition-colors">Conferences</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="/resume.pdf" className="hover:text-white transition-colors">Resume</a></li>
+              <li>
+                <a href="#about" className="hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#research"
+                  className="hover:text-white transition-colors"
+                >
+                  Research
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#conferences"
+                  className="hover:text-white transition-colors"
+                >
+                  Conferences
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/resume/CV_PoonamKarki.pdf"
+                  target="_blank"
+                  className="hover:text-white transition-colors"
+                >
+                  Resume
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -56,7 +81,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300 flex items-center justify-center">
-            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Poonam Karki © 2024
+            Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Poonam
+            Karki © 2024
           </p>
           <p className="text-gray-400 text-sm mt-2">
             Built with Next.js, React, and Tailwind CSS
@@ -64,5 +90,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
