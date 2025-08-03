@@ -66,7 +66,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Research Areas */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Research Focus</h3>
             <ul className="space-y-2 text-gray-300">
