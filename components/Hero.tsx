@@ -44,7 +44,8 @@ export default function Hero() {
                 "Building Healthy Soils, One Study at a Time"
               </p>
               <p className="text-base text-gray-600">
-                Advancing soil health research to support sustainable farming and resilient food systems
+                Advancing soil health research to support sustainable farming
+                and resilient food systems
               </p>
             </motion.div>
 
@@ -59,35 +60,11 @@ export default function Hero() {
                 <p className="text-sm text-gray-600">Active Projects</p>
               </div>
               <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
-                <span className="text-2xl font-bold text-emerald-600">USDA</span>
+                <span className="text-2xl font-bold text-emerald-600">
+                  USDA
+                </span>
                 <p className="text-sm text-gray-600">Funded Research</p>
               </div>
-              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
-                <span className="text-2xl font-bold text-emerald-600">$50B</span>
-                <p className="text-sm text-gray-600">Organic Industry</p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex gap-4 mb-8"
-            >
-              <a
-                href="#contact"
-                className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <Mail size={20} />
-                Contact Me
-              </a>
-              <a
-                href="/resume.pdf"
-                className="bg-white/70 backdrop-blur-sm border border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                <Download size={20} />
-                Download Resume
-              </a>
             </motion.div>
 
             <motion.div
@@ -121,42 +98,63 @@ export default function Hero() {
             <div className="bg-white/30 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
               {/* Glass effect overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl"></div>
-              
+
               <div className="relative z-10 space-y-6">
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Microscope className="w-8 h-8 text-emerald-600" />
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Research Focus</h3>
-                  <p className="text-gray-600">Microbial ecology & soil biogeochemical cycling</p>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                    Research Focus
+                  </h3>
+                  <p className="text-gray-600">
+                    Microbial ecology & soil biogeochemical cycling
+                  </p>
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <Leaf className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Expertise Areas</h4>
-                      <p className="text-sm text-gray-600">Microbial ecology, soil biogeochemical cycling, and conservation practices</p>
+                      <h4 className="font-semibold text-gray-800">
+                        Expertise Areas
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        Microbial ecology, soil biogeochemical cycling, and
+                        conservation practices
+                      </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <Users className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-800">Mission</h4>
-                      <p className="text-sm text-gray-600">Helping small- and mid-scale farmers transition to improve production and productivity</p>
+                      <p className="text-sm text-gray-600">
+                        Advancing climate-smart agriculte by helping small and
+                        mid-scale farmers transition to organic production,
+                        improve productivity, and build resilience thorough
+                        evidence-based soild health managament
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white/40 backdrop-blur-sm rounded-lg p-4 border border-white/30">
-                  <h4 className="font-semibold text-gray-800 mb-2">Current Position</h4>
-                  <p className="text-sm text-gray-700">Soil Health Research Specialist at Lincoln University, working in Dr. Hurisso's lab focusing on organic agricultural systems</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">
+                    Current Position
+                  </h4>
+                  <p className="text-sm text-gray-700">
+                    Soil Health Research Specialist at Lincoln University,
+                    working in Dr. Hurisso's lab focusing on organic
+                    agricultural systems
+                  </p>
                 </div>
 
                 <div className="text-center pt-4">
                   <p className="text-xs text-gray-500 italic">
-                    "A single teaspoon of soil contains more microorganisms than the entire global human population"
+                    "A single teaspoon of soil contains more microorganisms than
+                    the entire global human population"
                   </p>
                 </div>
               </div>
