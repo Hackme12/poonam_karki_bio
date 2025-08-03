@@ -4,15 +4,21 @@ import {
   Download,
   Mail,
   Linkedin,
-  Award,
-  Target,
-  Lightbulb,
+  Microscope,
+  Leaf,
+  Users,
 } from "lucide-react";
-import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center relative" style={{ backgroundColor: "#8B7355" }}>
+    <section className="min-h-screen flex items-center relative bg-gradient-to-br from-emerald-50 via-blue-50 to-green-100">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-20 w-32 h-32 bg-green-300 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-300 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-emerald-300 rounded-full blur-2xl"></div>
+      </div>
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Hero Content */}
@@ -22,120 +28,137 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-left"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
-              Poonam Karki
-            </h1>
-            <p className="text-xl md:text-2xl mb-4 text-blue-600">
-              Research Specialist & Data Scientist
-            </p>
-            <p className="text-lg mb-8 text-gray-600">
-              Bridging Finance Analytics & Soil Science Research at Lincoln
-              University of Missouri
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-6"
+            >
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
+                Poonam Karki
+              </h1>
+              <p className="text-xl md:text-2xl mb-4 text-emerald-600 font-semibold">
+                Soil Health Research Specialist
+              </p>
+              <p className="text-lg mb-2 text-gray-700 italic font-medium">
+                "Building Healthy Soils, One Study at a Time"
+              </p>
+              <p className="text-base text-gray-600">
+                Advancing soil health research to support sustainable farming and resilient food systems
+              </p>
+            </motion.div>
 
-            <div className="flex flex-wrap gap-4 mb-8">
-              <div className="bg-blue-50 rounded-lg px-4 py-2">
-                <span className="text-2xl font-bold text-blue-600">15+</span>
-                <p className="text-sm text-gray-600">Publications</p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-wrap gap-4 mb-8"
+            >
+              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
+                <span className="text-2xl font-bold text-emerald-600">2</span>
+                <p className="text-sm text-gray-600">Active Projects</p>
               </div>
-              <div className="bg-blue-50 rounded-lg px-4 py-2">
-                <span className="text-2xl font-bold text-blue-600">8</span>
-                <p className="text-sm text-gray-600">Conferences</p>
+              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
+                <span className="text-2xl font-bold text-emerald-600">USDA</span>
+                <p className="text-sm text-gray-600">Funded Research</p>
               </div>
-              <div className="bg-blue-50 rounded-lg px-4 py-2">
-                <span className="text-2xl font-bold text-blue-600">3</span>
-                <p className="text-sm text-gray-600">Research Projects</p>
+              <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2 shadow-lg">
+                <span className="text-2xl font-bold text-emerald-600">$50B</span>
+                <p className="text-sm text-gray-600">Organic Industry</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex gap-4 mb-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex gap-4 mb-8"
+            >
               <a
                 href="#contact"
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center gap-2"
+                className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <Mail size={20} />
                 Contact Me
               </a>
               <a
                 href="/resume.pdf"
-                className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors flex items-center gap-2"
+                className="bg-white/70 backdrop-blur-sm border border-emerald-600 text-emerald-600 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <Download size={20} />
                 Download Resume
               </a>
-            </div>
+            </motion.div>
 
-            <div className="flex gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="flex gap-6"
+            >
               <a
                 href="https://www.linkedin.com/in/poonam-karki-56585b1b4/"
-                className="text-blue-600 hover:text-blue-800 transition-colors"
+                className="text-emerald-600 hover:text-emerald-800 transition-colors transform hover:scale-110"
               >
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:poonam@example.com"
-                className="text-blue-600 hover:text-blue-800 transition-colors"
+                href="mailto:poonam.karki@lincolnu.edu"
+                className="text-emerald-600 hover:text-emerald-800 transition-colors transform hover:scale-110"
               >
                 <Mail size={24} />
               </a>
-            </div>
+            </motion.div>
           </motion.div>
 
-          {/* Right Column - About Content */}
+          {/* Right Column - Glassy Mirror Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6"
+            className="relative"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+            <div className="bg-white/30 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+              {/* Glass effect overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl"></div>
+              
+              <div className="relative z-10 space-y-6">
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Microscope className="w-8 h-8 text-emerald-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Research Focus</h3>
+                  <p className="text-gray-600">Microbial ecology & soil biogeochemical cycling</p>
+                </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800 flex items-center">
-                <Target className="w-5 h-5 mr-2 text-blue-600" />
-                PhD Candidate Profile
-              </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Seeking PhD opportunities to advance interdisciplinary research
-                in{" "}
-                <strong>
-                  soil science, data analytics, and climate-smart agriculture
-                </strong>
-                . My unique background bridges finance, data science, and
-                agricultural research.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                With proven research experience, publication record, and $150K+
-                in secured funding, I bring both theoretical knowledge and
-                practical implementation skills.
-              </p>
-            </div>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <Leaf className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800">Expertise Areas</h4>
+                      <p className="text-sm text-gray-600">Microbial ecology, soil biogeochemical cycling, and conservation practices</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <Users className="w-5 h-5 text-emerald-600 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-gray-800">Mission</h4>
+                      <p className="text-sm text-gray-600">Helping small- and mid-scale farmers transition to improve production and productivity</p>
+                    </div>
+                  </div>
+                </div>
 
-            <div className="grid gap-4">
-              <div className="bg-white p-4 rounded-lg shadow-sm border">
-                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                  <Award className="w-5 h-5 mr-2 text-green-600" />
-                  Academic Excellence
-                </h4>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• MSc Soil Health (Lincoln University)</li>
-                  <li>• MBA Finance (GLA University)</li>
-                  <li>• 15+ peer-reviewed publications</li>
-                  <li>• 88 total citations, H-index 3.2</li>
-                </ul>
-              </div>
+                <div className="bg-white/40 backdrop-blur-sm rounded-lg p-4 border border-white/30">
+                  <h4 className="font-semibold text-gray-800 mb-2">Current Position</h4>
+                  <p className="text-sm text-gray-700">Soil Health Research Specialist at Lincoln University, working in Dr. Hurisso's lab focusing on organic agricultural systems</p>
+                </div>
 
-              <div className="bg-white p-4 rounded-lg shadow-sm border">
-                <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                  <Lightbulb className="w-5 h-5 mr-2 text-purple-600" />
-                  Research Innovation
-                </h4>
-                <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• ML models for soil assessment</li>
-                  <li>• Carbon sequestration studies</li>
-                  <li>• Climate adaptation strategies</li>
-                  <li>• Economic-agricultural modeling</li>
-                </ul>
+                <div className="text-center pt-4">
+                  <p className="text-xs text-gray-500 italic">
+                    "A single teaspoon of soil contains more microorganisms than the entire global human population"
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>

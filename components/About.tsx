@@ -14,26 +14,26 @@ import Image from "next/image";
 const researchHighlights = [
   {
     image: "/image/image_1.JPG",
-    title: "Soil Carbon Sequestration Research",
+    title: "Organic Transition Project",
     description:
-      "Investigating the potential of living perennial cover crops to enhance soil organic carbon storage by 25-40% in Midwest agricultural systems. This research addresses critical climate change mitigation strategies while improving soil health and farm productivity.",
+      "Developing sustainable cover crop-cash crop companion production methods to enhance soil health and crowd out weeds. Addressing the $50 billion U.S. organic agriculture industry's greatest challenge - weed management without tillage-induced soil degradation. Working to improve crop yields and profitability for small- and mid-sized vegetable farms across Missouri and the Midwest.",
     impact:
-      "Published in Journal of Sustainable Agriculture with 15+ citations",
+      "USDA-NIFA funded project supporting 14,000+ organic farms",
   },
   {
     image: "/image/image_2.JPG",
-    title: "Machine Learning for Soil Health Assessment",
+    title: "Solar Corridor Cropping System (SCCS)",
     description:
-      "Developed predictive models using Python and R to assess soil health indicators with 92% accuracy. This innovative approach combines traditional soil science with cutting-edge data science to revolutionize agricultural decision-making.",
+      "Revolutionary USDA Conservation Innovation Grant project creating year-round grazing alternatives by intercropping high-energy grain crops with high-protein forage species. This system reduces dependence on hay, machinery, and labor while regenerating soil health and increasing farm resilience against extreme weather events.",
     impact:
-      "Featured in 3 international conferences, potential patent application",
+      "Transformative solution for livestock operations, carbon sequestration focus",
   },
   {
     image: "/image/image_3.JPG",
-    title: "Climate-Resilient Agriculture Systems",
+    title: "Microbial Ecology & Biogeochemical Cycling",
     description:
-      "Leading interdisciplinary research on sustainable farming practices that adapt to climate variability. This work integrates economic modeling from my finance background with agricultural science to create viable solutions for farmers.",
-    impact: "Secured $150K research funding, 5+ farmer partnerships",
+      "Investigating the immense potential of soil microorganisms in biogeochemical cycles. Focused on carbon and nitrogen cycling dynamics in organic agricultural systems, exploring how microbial communities drive ecosystem sustainability and agricultural productivity.",
+    impact: "Advancing understanding of soil-microbe interactions for sustainable agriculture",
   },
 ];
 
@@ -68,58 +68,51 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
-            About Me & Research Excellence
+            Research Background & Current Projects
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* About Content */}
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white/70 backdrop-blur-sm border border-white/20 p-6 rounded-xl shadow-lg">
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800 flex items-center">
-                  <Target className="w-6 h-6 mr-2 text-blue-600" />
-                  PhD Candidate Profile
+                  <Target className="w-6 h-6 mr-2 text-emerald-600" />
+                  Research Journey & Passion
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Seeking PhD opportunities to advance interdisciplinary
-                  research in{" "}
-                  <strong>
-                    soil science, data analytics, and climate-smart agriculture
-                  </strong>
-                  . My unique background bridges finance, data science, and
-                  agricultural research, offering innovative perspectives on
-                  sustainable farming systems.
+                  My strong desire to study soil biogeochemistry is rooted in the immense potential and unexplored territory within this field. The pivotal moment that ignited my interest dates to my undergraduate years when I discovered that <strong>a single teaspoon of soil contains more microorganisms than the entire global human population</strong>.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  This astonishing fact initially struck me as a potential typographical error, compelling me to read it twice in disbelief. Nonetheless, it had a lasting effect on me, igniting my interest in this field and motivating me to embark on a journey of research into biogeochemical cycling.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  With proven research experience, publication record, and
-                  $150K+ in secured funding, I bring both theoretical knowledge
-                  and practical implementation skills to advance agricultural
-                  sustainability through data-driven approaches.
+                  Currently working as a <strong>Soil Health Research Specialist in Dr. Hurisso's lab at Lincoln University</strong>, I focus on microbial ecology and carbon and nitrogen cycling dynamics in organic agricultural systems.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="bg-white/70 backdrop-blur-sm border border-white/20 p-4 rounded-xl shadow-lg">
                   <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                     <Award className="w-5 h-5 mr-2 text-green-600" />
-                    Academic Excellence
+                    Current Focus
                   </h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• MSc Soil Health (Lincoln University)</li>
-                    <li>• MBA Finance (GLA University)</li>
-                    <li>• 15+ peer-reviewed publications</li>
-                    <li>• 88 total citations, H-index 3.2</li>
+                    <li>• Microbial ecology research</li>
+                    <li>• Soil biogeochemical cycling</li>
+                    <li>• Conservation practices</li>
+                    <li>• Organic agricultural systems</li>
                   </ul>
                 </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="bg-white/70 backdrop-blur-sm border border-white/20 p-4 rounded-xl shadow-lg">
                   <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
                     <Lightbulb className="w-5 h-5 mr-2 text-purple-600" />
-                    Research Innovation
+                    Impact Areas
                   </h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• ML models for soil assessment</li>
-                    <li>• Carbon sequestration studies</li>
-                    <li>• Climate adaptation strategies</li>
-                    <li>• Economic-agricultural modeling</li>
+                    <li>• Sustainable farming transitions</li>
+                    <li>• Small-mid scale farmer support</li>
+                    <li>• Soil health improvement</li>
+                    <li>• Production productivity enhancement</li>
                   </ul>
                 </div>
               </div>
