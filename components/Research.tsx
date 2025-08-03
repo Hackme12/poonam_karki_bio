@@ -20,19 +20,20 @@ const researchImages = [
     icon: <Leaf className="w-5 h-5 text-emerald-600" />,
     color: "emerald",
   },
-  {
-    src: "/image/solar_corridor_1.JPG",
-    alt: "Solar Corridor Cropping System Research",
-    title: "Project 2: Solar Corridor System",
-    icon: <Sun className="w-5 h-5 text-amber-600" />,
-    color: "amber",
-  },
+
   {
     src: "/image/solar_corridor_2.JPG",
     alt: "Laboratory Analysis and Data Processing",
     title: "Project 2: Solar Corridor System",
     icon: <Sun className="w-5 h-5 text-amber-600" />,
     color: "blue",
+  },
+  {
+    src: "/image/solar_corridor_1.JPG",
+    alt: "Solar Corridor Cropping System Research",
+    title: "Cmin-24 experiment in the laboratory",
+    icon: <Sun className="w-5 h-5 text-amber-600" />,
+    color: "amber",
   },
 ];
 
@@ -368,49 +369,80 @@ export default function Research() {
             <div className="bg-white/70 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-xl">
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  During my master's research, I focused on the physiological and metabolic techniques used to measure soil biological health indicators. For decades, soil organic carbon has been considered the "currency of soil health," and while widely studied, it often responds too slowly, sometimes requiring decades to reflect changes in soil and crop management.
+                  During my master's research, I focused on the physiological
+                  and metabolic techniques used to measure soil biological
+                  health indicators. For decades, soil organic carbon has been
+                  considered the "currency of soil health," and while widely
+                  studied, it often responds too slowly, sometimes requiring
+                  decades to reflect changes in soil and crop management.
                 </p>
-                
+
                 <p>
-                  Today, the focus has shifted toward the biologically active pools of soil organic matter (SOM), such as permanganate oxidizable carbon (POXC) and mineralizable carbon (Cmin-24). These measures are faster, more affordable, and more sensitive to management practices, offering deeper insights into soil carbon availability and crop performance. For example:
+                  Today, the focus has shifted toward the biologically active
+                  pools of soil organic matter (SOM), such as permanganate
+                  oxidizable carbon (POXC) and mineralizable carbon (Cmin-24).
+                  These measures are faster, more affordable, and more sensitive
+                  to management practices, offering deeper insights into soil
+                  carbon availability and crop performance. For example:
                 </p>
-                
+
                 <div className="bg-blue-50 rounded-lg p-6 ml-6">
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span><strong>POXC</strong> indicates how much food is available for soil microorganisms.</span>
+                      <span>
+                        <strong>POXC</strong> indicates how much food is
+                        available for soil microorganisms.
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span><strong>Cmin-24</strong> reveals how active those microorganisms are in the soil.</span>
+                      <span>
+                        <strong>Cmin-24</strong> reveals how active those
+                        microorganisms are in the soil.
+                      </span>
                     </li>
                   </ul>
                 </div>
-                
+
                 <p className="font-semibold text-blue-700">
-                  After three years working with labile carbon and nitrogen indicators, I have come to understand that soil microorganisms are central to most of the answers I seek.
+                  After three years working with labile carbon and nitrogen
+                  indicators, I have come to understand that soil microorganisms
+                  are central to most of the answers I seek.
                 </p>
-                
+
                 <p>
-                  In the future, I plan to move toward molecular and functional techniques that capture the complexity of the soil microbiome, which holds immense potential for understanding soil health:
+                  In the future, I plan to move toward molecular and functional
+                  techniques that capture the complexity of the soil microbiome,
+                  which holds immense potential for understanding soil health:
                 </p>
-                
+
                 <div className="bg-purple-50 rounded-lg p-6 ml-6">
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span><strong>Metagenomics</strong> can produce a detailed taxonomical profile of soil communities.</span>
+                      <span>
+                        <strong>Metagenomics</strong> can produce a detailed
+                        taxonomical profile of soil communities.
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                      <span><strong>Metatranscriptomics</strong> can provide a functional profile, revealing which microbial processes are active.</span>
+                      <span>
+                        <strong>Metatranscriptomics</strong> can provide a
+                        functional profile, revealing which microbial processes
+                        are active.
+                      </span>
                     </li>
                   </ul>
                 </div>
-                
+
                 <p>
-                  These approaches can be correlated with physical, chemical, and biological soil health indicators, creating a more holistic understanding of soil systems. Ultimately, my vision is to develop cost-effective, high-throughput methods for soil health assessment.
+                  These approaches can be correlated with physical, chemical,
+                  and biological soil health indicators, creating a more
+                  holistic understanding of soil systems. Ultimately, my vision
+                  is to develop cost-effective, high-throughput methods for soil
+                  health assessment.
                 </p>
               </div>
             </div>

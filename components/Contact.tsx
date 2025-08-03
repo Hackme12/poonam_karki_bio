@@ -1,33 +1,35 @@
-'use client'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
-import { Mail, Phone, MapPin, Linkedin, Send, Download } from 'lucide-react'
+"use client";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef, useState } from "react";
+import { Mail, Phone, MapPin, Linkedin, Send, Download } from "lucide-react";
 
 export default function Contact() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData)
+    console.log("Form submitted:", formData);
     // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
-  }
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -38,8 +40,10 @@ export default function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
-          
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
+            Get In Touch
+          </h2>
+
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <motion.div
@@ -47,10 +51,13 @@ export default function Contact() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800">Let's Collaborate</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+                Let's Collaborate
+              </h3>
               <p className="text-gray-700 mb-8 text-lg">
-                I'm always interested in discussing research opportunities, speaking engagements, 
-                or collaborations in soil science, data science, and sustainable agriculture.
+                I'm always interested in discussing research opportunities,
+                speaking engagements, or collaborations in soil science, data
+                science, and sustainable agriculture.
               </p>
 
               <div className="space-y-6">
@@ -60,7 +67,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Email</h4>
-                    <p className="text-gray-600">poonam.karki@lincolnu.edu</p>
+                    <p className="text-gray-600">karkip@lincolnu.edu</p>
                   </div>
                 </div>
 
@@ -80,7 +87,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">Location</h4>
-                    <p className="text-gray-600">Jefferson City, Missouri, USA</p>
+                    <p className="text-gray-600">
+                      Jefferson City, Missouri, USA
+                    </p>
                   </div>
                 </div>
 
@@ -90,8 +99,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800">LinkedIn</h4>
-                    <a 
-                      href="https://www.linkedin.com/in/poonam-karki-56585b1b4/" 
+                    <a
+                      href="https://www.linkedin.com/in/poonam-karki-56585b1b4/"
                       className="text-blue-600 hover:text-blue-800 transition-colors"
                     >
                       Connect with me
@@ -102,8 +111,8 @@ export default function Contact() {
 
               {/* Download Resume Button */}
               <div className="mt-8">
-                <a 
-                  href="/resume.pdf" 
+                <a
+                  href="/resume.pdf"
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   <Download className="w-5 h-5 mr-2" />
@@ -119,12 +128,17 @@ export default function Contact() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="bg-white p-8 rounded-lg shadow-sm"
             >
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800">Send a Message</h3>
-              
+              <h3 className="text-2xl font-semibold mb-6 text-gray-800">
+                Send a Message
+              </h3>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Name *
                     </label>
                     <input
@@ -139,7 +153,10 @@ export default function Contact() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Email *
                     </label>
                     <input
@@ -156,7 +173,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Subject *
                   </label>
                   <input
@@ -172,7 +192,10 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -200,5 +223,5 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

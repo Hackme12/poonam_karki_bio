@@ -23,11 +23,13 @@ A modern, responsive profile website showcasing research expertise, publications
 ## Getting Started
 
 1. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 2. **Run Development Server**
+
    ```bash
    npm run dev
    ```
@@ -38,18 +40,23 @@ A modern, responsive profile website showcasing research expertise, publications
 ## Customization
 
 ### Personal Information
+
 Update your personal details in the following components:
+
 - `components/Hero.tsx` - Main introduction and statistics
 - `components/About.tsx` - Personal background and education
 - `components/Contact.tsx` - Contact information
 
 ### Research Data
+
 Modify research content in:
+
 - `components/Research.tsx` - Publications and projects
 - `components/Conferences.tsx` - Conference presentations
 - `components/DataVisualization.tsx` - Research metrics and charts
 
 ### Styling
+
 - Colors and themes: `tailwind.config.js`
 - Global styles: `app/globals.css`
 - Component-specific styles: Individual component files
@@ -57,11 +64,13 @@ Modify research content in:
 ## Deployment
 
 ### Vercel (Recommended)
+
 1. Push code to GitHub
 2. Connect repository to Vercel
 3. Deploy automatically
 
 ### Other Platforms
+
 ```bash
 npm run build
 npm start
@@ -93,5 +102,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 For questions about this website template or collaboration opportunities:
-- Email: poonam.karki@lincolnu.edu
+
+- Email: karkip@lincolnu.edu
 - LinkedIn: [Poonam Karki](https://www.linkedin.com/in/poonam-karki-56585b1b4/)

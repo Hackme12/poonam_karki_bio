@@ -80,7 +80,7 @@ export default function Hero() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:poonam.karki@lincolnu.edu"
+                href="mailto:karkip@lincolnu.edu"
                 className="text-emerald-600 hover:text-emerald-800 transition-colors transform hover:scale-110"
               >
                 <Mail size={24} />

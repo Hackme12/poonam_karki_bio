@@ -23,6 +23,7 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
     //{ name: "Skills", href: "#skills" },
     { name: "Conferences", href: "#conferences" },
     { name: "Research", href: "#research" },
+    { name: "CV", href: "/resume/CV_PoonamKarki.pdf" },
     // { name: 'Data', href: '#data-viz' },
     // { name: 'Contact', href: '#contact' },
   ];
@@ -58,14 +59,14 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
                 {item.name}
               </a>
             ))}
-            <button
+            {/* <button
               onClick={onExperienceClick}
               className={`font-medium transition-colors hover:text-blue-600 ${
                 scrolled ? "text-gray-700" : "text-white hover:text-blue-200"
               }`}
             >
               Experience
-            </button>
+            </button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,7 +96,7 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
                   {item.name}
                 </a>
               ))}
-              <button
+              {/* <button
                 onClick={() => {
                   onExperienceClick();
                   setIsOpen(false);
@@ -103,7 +104,7 @@ export default function Navigation({ onExperienceClick }: NavigationProps) {
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors"
               >
                 Experience
-              </button>
+              </button> */}
             </div>
           </div>
         )}
